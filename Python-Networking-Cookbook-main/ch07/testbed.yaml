@@ -1,0 +1,14 @@
+devices:
+  <insert hostname>:
+    type: router
+    os: iosxe
+    credentials:
+      default:
+        username: <insert username>
+        password: C1sco12345
+    connections:
+      mgmt:
+        protocol: ssh
+        ip: <insert host>
+        port: <insert port>
+        ssh_options: -o KexAlgorithms=+diffie-hellman-group-exchange-sha1 -c aes256-ctr
